@@ -1,0 +1,127 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Navbar Styles */
+.navbar {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar__link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  text-decoration: underline;
+}
+.hero {
+  background-image: url('smth.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+/* Hero Section Styles */
+
+.hero__overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero__button {
+  background-color: #e91e63;
+  padding: 0.75rem 2rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero__button:hover {
+  background-color: #c2185b;
+}
+
+/* About Me Section Styles */
+
+.about-me {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.about-me > * {
+  padding: 20px;
+}
+.about-me__image {
+  width: 400px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.about-me__content > * {
+    margin: 20px 0;
+}
+.about-me__heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+}
+
+.about-me__text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+}
