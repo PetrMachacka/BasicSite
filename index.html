@@ -11,11 +11,11 @@
 
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar" id="navbar">
     <nav class="navbar__menu">
       <a href="#about" class="navbar__link">About me</a>
-      <a href="#skills" class="navbar__link">Skills</a>
       <a href="#projects" class="navbar__link">Projects</a>
+      <a href="#contact" class="navbar__link">Contact</a>
     </nav>
   </div>
   <section class="hero">
@@ -36,78 +36,113 @@
 </style>
 
 
-  <!-- Sections below will be added later -->
   <main class="main-content">
-    <section id="about">
+    <section id="about" class="about">
       <h1 class="section-title">Current technologies</h1>
       <div class="technology__container">
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/figma.svg" alt="Figma Logo" class="technology__logo" />
           <div class="technology__info">
             <p class="technology__name">Figma</p>
             <p class="technology__description">Design and prototyping tool</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/nextjs.svg" alt="NextJS Logo" class="technology__logo technology__logo--white" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">NextJS</p>
+            <p class="technology__description">React framework for building server-side rendered applications</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/react.svg" alt="React Logo" class="technology__logo technology__logo--blue" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">React</p>
+            <p class="technology__description">JavaScript library for building user interfaces</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/git.svg" alt="Git Logo" class="technology__logo technology__logo--orange" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">Git</p>
+            <p class="technology__description">Version control system</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/aspnet.svg" alt="ASP.NET Logo" class="technology__logo technology__logo--accent" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">ASP.NET</p>
+            <p class="technology__description">Web framework for building web apps</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/sql.svg" alt="SQL Logo" class="technology__logo technology__logo--yellow" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">SQL</p>
+            <p class="technology__description">Database management system</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/prisma.svg" alt="Prisma Logo" class="technology__logo technology__logo--light-blue" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">Prisma</p>
+            <p class="technology__description">Database toolkit</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/unity.svg" alt="Unity Logo" class="technology__logo technology__logo--gray" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">Unity</p>
+            <p class="technology__description">Game development platform</p>
           </div>
         </div>
         <div class="technology__item">
-          <img src="media/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <img src="media/logos/UE.svg" alt="Unreal Engine Logo" class="technology__logo technology__logo--white" />
           <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
+            <p class="technology__name">Unreal Engine</p>
+            <p class="technology__description">Game development platform</p>
+          </div>
+        </div>
+        <div class="technology__item">
+          <img src="media/logos/wordpress.svg" alt="WordPress Logo" class="technology__logo technology__logo--white" />
+          <div class="technology__info">
+            <p class="technology__name">WordPress</p>
+            <p class="technology__description">Content management system</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="skills">...</section>
-    <section id="projects">...</section>
+    <section id="projects" class="projects">
+      <h1 class="section-title">My Projects</h1>
+      <div class="project__container">
+          <h2 style="color:white">This part is under construction</h2>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h1 class="section-title">Contact Me</h1>
+      <div class="contact__item contact__item--main">
+        <p class="contact__text">Feel free to reach out if you want to <span class="accent-color">collaborate</span> on a project, have a question, or just want to connect!</p>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__item">
+          <img src="media/contactIcon/phone.svg" alt="Phone Icon" class="contact__icon" />
+          <div class="contact__text-container">
+            <h2 class="contact__title">Email</h2>
+            <p class="contact__text">Email</p>
+          </div>
+        </div>
+        <div class="contact__item">
+          <div class="contact__text-container">
+            <h2 class="contact__title">Email</h2>
+            <p class="contact__text">Email</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <p class="footer__text">© 2025 Petr Machačka. All rights reserved.</p>
+  </footer>
+  <script src="javascript/index.js" defer></script>
 </body>
 </html>
