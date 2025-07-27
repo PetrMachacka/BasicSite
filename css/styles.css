@@ -6,6 +6,9 @@
   --secondary-bg-color: #1A1A1A;
   --border-color: #4D4D4D;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Inter', sans-serif;
