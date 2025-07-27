@@ -55,16 +55,17 @@ body {
 .navbar__link:hover {
   text-decoration: underline;
 }
+
+/* Hero Section Styles */
+
 .hero {
-  background-image: url('../media/MainPage1.svg');
+  background-image: url('../media/MainPage.svg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
   color: white;
 }
-
-/* Hero Section Styles */
 
 .hero__overlay {
   background-color: rgba(0, 0, 0, 0.5); 
@@ -80,6 +81,7 @@ body {
 .hero__content {
   text-align: center;
   padding: 2rem;
+  margin-bottom: 4rem;
 }
 
 .hero__title {
@@ -98,10 +100,73 @@ body {
   padding: 0.75rem 2rem;
   color: var(--text-color);
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 0.5em;
   font-weight: bold;
+}
+
+.hero__button--secondary {
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
 }
 
 .hero__button:hover {
   background-color: var(--accent-hover-color);
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.technology__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: left;
+}
+
+.technology__item {
+  width: 15em;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.technology__item:hover {
+  transform: translateY(-5px);
+}
+
+.technology__logo {
+  background-color: green;
+  max-width: 100%;
+  padding: 0.5rem;
+  height: auto;
+  border-radius: 1em;
+}
+
+.technology__name {
+  text-align: left;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 0;
+}
+.technology__info {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.technology__description {
+  text-align: left;
+  color: var(--text-color);
+  font-size: 0.8rem;
+  margin: 0;
 }
