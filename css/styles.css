@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #0A0A0A;
-  --text-color: #FFFFFF;
+  --text-color: #e7dfdf;
   --accent-color: #e91e63;
   --accent-hover-color: #c2185b;
   --secondary-bg-color: #1A1A1A;
@@ -46,7 +46,7 @@ body {
   transform: translateX(-50%);
   transition: transform 0.3s ease;
   top: 2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   z-index: 1000;
   border: var(--border-color) 1px solid;
 }
@@ -68,6 +68,24 @@ body {
 
 .navbar__link:hover {
   text-decoration: underline;
+}
+.navbar__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--text-color);
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navbar__text {
+    display: none;
+  }
+  .navbar__icon {
+    display: block;
+  }
+  .navbar__menu{
+    gap: 1rem;
+  }
 }
 
 /* Hero Section Styles */
