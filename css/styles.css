@@ -1,5 +1,17 @@
+:root {
+  --main-bg-color: #0A0A0A;
+  --text-color: #FFFFFF;
+  --accent-color: #e91e63;
+  --accent-hover-color: #c2185b;
+  --secondary-bg-color: #1A1A1A;
+  --border-color: #4D4D4D;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg-color);
 }
 
 .main-content {
@@ -14,23 +26,19 @@ body {
   border-radius: 8px;
 }
 /* Navbar Styles */
+
 .navbar {
-  background-color: #222;
-  color: white;
+  width: fit-content;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
   padding: 1rem 2rem;
-}
-
-.navbar__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar__logo {
-  font-weight: bold;
-  font-size: 1.5rem;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2em;
+  border-radius: 1em;
+  z-index: 1000;
+  border: var(--border-color) 1px solid;
 }
 
 .navbar__menu {
@@ -48,7 +56,7 @@ body {
   text-decoration: underline;
 }
 .hero {
-  background-image: url('smth.jpg');
+  background-image: url('../media/MainPage1.svg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -63,6 +71,8 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -84,44 +94,14 @@ body {
 }
 
 .hero__button {
-  background-color: #e91e63;
+  background-color: var(--accent-color);
   padding: 0.75rem 2rem;
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
 }
 
 .hero__button:hover {
-  background-color: #c2185b;
-}
-
-/* About Me Section Styles */
-
-.about-me {
-  background-color: #f9f9f9;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-.about-me > * {
-  padding: 20px;
-}
-.about-me__image {
-  width: 400px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.about-me__content > * {
-    margin: 20px 0;
-}
-.about-me__heading {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
-}
-
-.about-me__text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin: 0 auto;
+  background-color: var(--accent-hover-color);
 }

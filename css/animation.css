@@ -1,0 +1,32 @@
+.arrow path {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation: draw 1s forwards, fillIn 0.5s 1s forwards, moveDown 1s 1.5s forwards;
+}
+
+/* 1. Draw the stroke */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* 2. Fill the arrow */
+@keyframes fillIn {
+  to {
+    fill: #e91e63;
+  }
+}
+
+/* 3. Move the arrow down */
+@keyframes moveDown {
+  to {
+    transform: translateY(30px);
+  }
+}
+
+/* Required to animate transform on SVG */
+.arrow path {
+  transition: transform 1s ease;
+  transform-origin: center;
+}
