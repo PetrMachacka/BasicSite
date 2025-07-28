@@ -8,12 +8,13 @@ body {
 }
 
 .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  overflow-x: auto;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow-x: auto;
+    width: 100%;
 }
 
 .flipbook-wrapper {
@@ -25,34 +26,24 @@ body {
 }
 
 .flipbook {
-  height: 600px;
+  height: 750px;
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
-    .projects{
-        padding: 0;
-    }
-    .flipbook {
-        height: 400px;
-    }
-}
-@media (max-width: 600px) {
-  .flipbook {
-    height: 300px;
-  }
-}
-@media (max-width: 400px) {
-  .flipbook {
-    height: 250px;
-  }
-}
 
 .flipbook .hard {
+    position: relative;
     background: var(--secondary-bg-color) !important;
     color: var(--text-color);
     font-weight: bold;
     border: solid 1px rgba(0, 0, 0, 0.1); 
+}
+
+.flipbook .hard .topright {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 14px;
 }
 
 .flipbook .hard small{
@@ -82,4 +73,44 @@ body {
 	font-size: 14px;
     margin-bottom: 10px;
 }
-
+@media (max-width: 1200px) {
+    .flipbook {
+        height: 700px;
+    }
+}
+@media (max-width: 992px) {
+    .flipbook {
+        height: 600px;
+    }
+}
+@media (max-width: 850px) {
+    .flipbook {
+        height: 500px;
+    }
+}
+@media (max-width: 768px) {
+    .projects{
+        padding: 0;
+    }
+    .flipbook {
+        height: 400px;
+    }
+    .page img{
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .flipbook {
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .flipbook {
+        height: 280px;
+    }
+}
+@media (max-width: 400px) {
+    .flipbook {
+        height: 250px;
+    }
+}
