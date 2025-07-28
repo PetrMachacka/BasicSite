@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/book.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
@@ -37,8 +38,8 @@
         <h1 class="hero__title">Hi, I'm Petr</h1>
         <p class="hero__subtitle">Web developer & Enthusiast</p>
         <div>
-          <a href="#projects" class="hero__button hero__button--secondary">See my work</a>
-          <a href="#contact" class="hero__button">Contact Me</a>
+          <a href="#projects" class="hero__button hero__button--secondary">See my work ></a>
+          <a href="#contact" class="hero__button hero__button--primary">Contact Me</a>
         </div>
       </div>
     </div>
@@ -119,12 +120,32 @@
         </div>
       </div>
     </section>
+
     <section id="projects" class="projects">
       <h1 class="section-title">My Projects</h1>
-      <div class="project__container">
-          <h2 style="color:white">This part is under construction</h2>
-      </div>
+        <div class="flipbook-wrapper">
+          <div class="flipbook">
+            <div class="hard">My Projects <small>Petr Machačka</small></div>
+            <div class="hard"></div>
+            <div>
+              <img src="media/ProjectScreenshot/Screenshot 2025-07-28 131657.png" alt="Website Image" class="pokemon-image" />
+              <small>This Website</small>
+            </div>
+            <div>
+              <img src="media/ProjectScreenshot/Chimken.png" alt="Game Image" class="pokemon-image" />
+              <small>Chimken Game</small>
+            </div>
+            <div class="hard"></div>
+            <div class="hard">Thank You</div>
+          </div>
+        </div>
+      <script src="javascript/jquery.js"></script>
+      <script src="javascript/turn.js"></script>
+      <script>
+        $(".flipbook").turn();
+      </script>
     </section>
+
     <section id="contact" class="contact">
       <h1 class="section-title">Contact Me</h1>
       <div class="contact__item contact__item--main">
