@@ -10,6 +10,11 @@ html{
   scroll-behavior: smooth;
 }
 
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -147,6 +152,7 @@ body {
   border-radius: 0.5em;
   font-weight: bold;
 }
+
 .hero__button--primary {
   background-color: var(--accent-color);
 }
@@ -331,7 +337,11 @@ body {
   margin: 0;
   font-size: 0.8em;
 }
-
+@media (max-width: 600px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
 a{
   text-decoration: none;
 }
