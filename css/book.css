@@ -114,7 +114,7 @@ body {
     .flipbook {
         height: 400px;
     }
-    .page img{
+    .page a{
         width: 90%;
     }
 }
