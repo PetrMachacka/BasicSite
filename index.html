@@ -47,14 +47,8 @@
   <main class="main-content">
     <section id="about" class="about">
       <h1 class="section-title">Current technologies</h1>
+      <p class="projects-description">I am currently working with a variety of technologies to build modern web applications. Here are some of the key technologies I use:</p>
       <div class="technology__container">
-        <div class="technology__item">
-          <img src="media/logos/figma.svg" alt="Figma Logo" class="technology__logo" />
-          <div class="technology__info">
-            <p class="technology__name">Figma</p>
-            <p class="technology__description">Design and prototyping tool</p>
-          </div>
-        </div>
         <div class="technology__item">
           <img src="media/logos/nextjs.svg" alt="NextJS Logo" class="technology__logo technology__logo--white" />
           <div class="technology__info">
@@ -91,6 +85,13 @@
           </div>
         </div>
         <div class="technology__item">
+          <img src="media/logos/typescript.svg" alt="TypeScript Logo" class="technology__logo technology__logo--blue" />
+          <div class="technology__info">
+            <p class="technology__name">TypeScript</p>
+            <p class="technology__description">Programming language</p>
+          </div>
+        </div>
+        <div class="technology__item">
           <img src="media/logos/prisma.svg" alt="Prisma Logo" class="technology__logo technology__logo--light-blue" />
           <div class="technology__info">
             <p class="technology__name">Prisma</p>
@@ -118,10 +119,18 @@
             <p class="technology__description">Content management system</p>
           </div>
         </div>
+        <div class="technology__item">
+          <img src="media/logos/figma.svg" alt="Figma Logo" class="technology__logo" />
+          <div class="technology__info">
+            <p class="technology__name">Figma</p>
+            <p class="technology__description">Design and prototyping tool</p>
+          </div>
+        </div>
       </div>
     </section>
     <section id="projects" class="projects">
       <h1 class="section-title">My Projects</h1>
+      <p class="projects__description">Here are some of the projects I have worked on recently. Click on the images to learn more about each project.</p>
         <div class="flipbook-wrapper">
           <div class="flipbook">
             <div class="hard">My Projects <small>Petr Machačka</small><div class="topright">Flip me -></div></div>
@@ -132,7 +141,8 @@
               <small>This Website</small>
             </div>
             <div class="project-description">
-              <p>This is a description of my website project.</p>
+              <h3 class="project-description__title">Portfolio Website</h3>
+              <p class="project-description__text">A responsive portfolio site showcasing my projects, skills, and contact info. Features a flipbook-style viewer and a clean, modern design.</p>
             </div>
             <div>
               <a href="ProjectsPages/Chimken.html">
@@ -141,29 +151,8 @@
               <small>Chimken Game</small>
             </div>
             <div class="project-description">
-              <p>This is a description of my website project.</p>
+              <p class="project-description__text">This is a description of my game.</p>
             </div>
-            <div>
-              <a href="ProjectsPages/Chimken.html">
-                <img src="media/ProjectScreenshot/Chimken.png" alt="Game Image" />
-              </a>
-              <small>Chimken Game</small>
-            </div>
-            <div class="project-description">
-              <p>This is a description of my website project.</p>
-            </div>
-            <div>
-              <a href="ProjectsPages/Chimken.html">
-                <img src="media/ProjectScreenshot/Chimken.png" alt="Game Image" />
-              </a>
-              <small>Chimken Game</small>
-            </div>
-            <div class="project-description">
-              <p>This is a description of my website project.</p>
-            </div>
-            <div class="hard"></div>
-            <div class="hard">Thank You</div>
-          </div>
         </div>
       <script src="javascript/jquery.js"></script>
       <script src="javascript/turn.js"></script>
@@ -194,7 +183,7 @@
           <img src="media/contactIcon/github.svg" alt="GitHub Icon" class="contact__icon" />
           <div class="contact__text-container">
             <h2 class="contact__title">GitHub</h2>
-            <a href="https://github.com/machacka" target="_blank">
+            <a href="https://github.com/PetrMachacka" target="_blank">
               <p class="contact__link">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path></svg>
                 Petr Machačka
@@ -206,7 +195,7 @@
           <img src="media/contactIcon/linkedin.svg" alt="LinkedIn Icon" class="contact__icon" />
           <div class="contact__text-container">
             <h2 class="contact__title">LinkedIn</h2>
-            <a href="https://www.linkedin.com/in/petr-machacka/" target="_blank">
+            <a href="https://www.linkedin.com/in/petr-machačka-95a83428b" target="_blank">
               <p class="contact__link">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l82.7 0L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3l0 82.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-160c0-17.7-14.3-32-32-32L320 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path></svg>
                 Petr Machačka

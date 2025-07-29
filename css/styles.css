@@ -37,6 +37,14 @@ body {
 .main-content > section {
   margin-bottom: 5em;
 }
+@media (max-width: 600px) {
+  .main-content {
+    padding: 15px;
+  }
+  .main-content > section {
+    margin-bottom: 3em;
+  }
+}
 .image{
   width: 100%;
   height: auto;

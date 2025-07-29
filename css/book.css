@@ -14,6 +14,7 @@ body {
     align-items: center;
     overflow-x: auto;
     width: 100%;
+    margin: 0;
 }
 
 .flipbook-wrapper {
@@ -51,8 +52,22 @@ body {
     background: var(--secondary-bg-color) !important;
     font-size: 16px;
     color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
-
+.project-description__text {
+    padding: 0 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.project-description__title {
+    padding: 0 1rem;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+}
 .flipbook .hard small{
 	font-style: italic;
 	font-weight: lighter;
@@ -126,6 +141,10 @@ body {
 @media (max-width: 600px) {
     .flipbook {
         height: 300px;
+    }
+    .project-description__text {
+        font-size: 14px;
+
     }
 }
 @media (max-width: 500px) {
