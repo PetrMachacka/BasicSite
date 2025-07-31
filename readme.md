@@ -93,10 +93,6 @@ The project uses CSS custom properties for easy theming:
 2. Create project page in `ProjectsPages/`
 3. Update the flipbook content in `index.html`
 
-## 📄 License
-
-© 2025 Petr Machačka. All rights reserved.
-
 ## 📞 Contact
 
 - **Email**: machacka.petr1@gmail.com
