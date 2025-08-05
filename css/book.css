@@ -50,7 +50,9 @@ body {
 }
 .project-description {
     background: var(--secondary-bg-color) !important;
-    padding-top: 1rem;
+    padding-top: 2rem;
+    padding-left: 1em;
+    padding-right: 1em;
     font-size: 16px;
     color: var(--text-color);
     display: flex;
@@ -68,6 +70,7 @@ body {
 }
 .project-description__title {
     padding: 0 1rem;
+    font-size: 1.6rem;
     text-align: left;
     font-weight: bold;
     margin: 0;
