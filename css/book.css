@@ -48,7 +48,7 @@ body {
     display: flex;
     flex-direction: row;
 }
-.project-description {
+.page.odd {
     background: var(--secondary-bg-color) !important;
     padding-top: 2rem;
     font-size: 16px;
